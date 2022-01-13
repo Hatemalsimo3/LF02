@@ -1,6 +1,7 @@
-public  class  programm {
+public  class Programm {
     public static void main(String[] args) {
-        apffel apfel=new apffel();
+        Apfel apfel=new Apfel();
+
 
        // apfel.getName();
         apfel.setFarbe( "grün");
@@ -11,8 +12,10 @@ public  class  programm {
         System.out.println("ihr apfell ist:"  +apfel.getGewicht()+  ":geram");
         System.out.println("ihr apffel ist:"+apfel.isReif()+ ":also ist ihr apfel reif");
          // Banane program
-        banane banane=new banane();
+        Banane banane=new Banane();
         System.out.println(banane.getName());
+        Apfel Apfel=new Apfel();
+        System.out.println(Apfel.getName());
 
 
 
