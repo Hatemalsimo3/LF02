@@ -1,15 +1,17 @@
-public abstract class  Obst {
+public abstract class  Obst<String> {
     private String name;
     private String farbe;
     private double gewicht;
     private boolean reif;
      // Konztruktuer
      public Obst(String name){
+
          this.name=name;
      }
 
     public String getName(){
-        return name;
+
+         return name;
     }
      //Getter
     public String getFarbe(){
