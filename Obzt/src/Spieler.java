@@ -1,4 +1,4 @@
-public class Spieler extends Trainer{
+public abstract class Spieler extends Trainer{
 
     private String name;
     private int alter;
@@ -7,23 +7,29 @@ public class Spieler extends Trainer{
     private int motivation;
     private int tore;
 
-    public Spieler (String name,int staerke,int torschuss, int motivation,int tore){
-        super("Spielr,",2,3);
+    public Spieler (String name,int alter,int staerke,int torschuss, int motivation,int tore){
+        super("Spielr,",0,0);
+        this.tore=tore;
+        this.alter=alter;
+        this.motivation=motivation;
+        this.torschuss=torschuss;
+        this.staerke=staerke;
+        this.name=name;
     }
 
-    public String getname(){
+    public String getName(){
 
         return name;
     }
-    public void setname(String name){
+    public void setName(String name){
 
         this.name=name;
     }
 
-    public int getalter() {
+    public int getAlter() {
         return alter;
     }
-    public void setalter(int alter){
+    public void setAlter(int alter){
         this.alter=alter;
     }
 
@@ -59,6 +65,7 @@ public class Spieler extends Trainer{
         this.tore = tore;
     }
 
+    @Override
     public String toString(){
         String text = "\n\t Name =" + name;
         text +="\n\t Alter = " + alter;
@@ -69,4 +76,6 @@ public class Spieler extends Trainer{
 
         return text;
     }
+
+
 }
