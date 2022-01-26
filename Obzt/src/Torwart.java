@@ -2,7 +2,6 @@ import java.util.Random;
 
 public  class Torwart extends Spieler{
     private  int reaktion;
-    private int towartmotivation;
 
 
 

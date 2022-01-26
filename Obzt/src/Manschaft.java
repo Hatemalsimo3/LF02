@@ -1,6 +1,6 @@
 import java.util.ArrayList;
 
-public  class Manschaft extends Spieler  {
+public class Manschaft extends Spieler  {
     private String nameTorwart;
     private String nameTrainer;
     private ArrayList<Spieler> spielerListe;
@@ -15,7 +15,11 @@ public  class Manschaft extends Spieler  {
         this.staerke=staerke;
 
 
+
+
     }
+
+
 
     public String getNameTorwart(){
         return nameTorwart;

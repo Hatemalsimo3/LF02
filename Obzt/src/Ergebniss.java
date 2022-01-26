@@ -4,6 +4,9 @@ public class Ergebniss {
     private int ergebnis2=0;
     public Ergebniss (int ergebnis1,int ergebnis2) {
 
+        this.ergebnis1=ergebnis1;
+        this.ergebnis2=ergebnis2;
+
     }
     public int getErgebnis(){
         return ergebnis1;
