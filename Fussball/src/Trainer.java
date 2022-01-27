@@ -1,10 +1,10 @@
-public abstract class  Trainer extends Person{
+public class  Trainer extends Person{
 
 
         private  int erfahrung ;
 
         public Trainer ( String name, int alter , int erfahrung ) {
-            super("Hatem",1);
+            super(name,alter);
 
 
             this . erfahrung = erfahrung ;

@@ -4,11 +4,18 @@ import java.util.Random;
 public class Fussbalprogram {
     public static void main(String[] args) {
 
-        Trainer hatem=new Trainer("Abdul", 21, 0) {
-        };
-        System.out.println(hatem.toString());
+        Trainer hatem=new Trainer("Abdul", 21, 2) ;
+        System.out.println("Trainer Name ist = "+ hatem.getName());
+        System.out.println("Trainer Alter = "+hatem.getAlter());
+        System.out.println("Trainers Erfahrung ist =" +hatem.geterfahrung());
 
         Torwart torwartHans = new Torwart("mo",12,0,0,12);
+        System.out.println("Name des Torwartes ist =" + torwartHans.getName());
+        System.out.println("Torwart Alter = " + torwartHans.getAlter());
+        System.out.println("Torwart stearke ist =" +torwartHans.getStaerke());
+        System.out.println( "Torwart Motivation = "+torwartHans.getMotivation());
+        System.out.println("Torwart Reaktion ist = " +torwartHans.getReaktion());
+
 
         Spieler spieler1 =new Spieler("haem",2,3,2,12,2);
 
@@ -23,12 +30,7 @@ public class Fussbalprogram {
         System.out.println(manschaft);
 
 
-        for ( int i=0;i<100;i++) {
-            Random zufall = new Random();
-            int u = zufall.nextInt(5) - 2;
-            System.out.println(u);
 
-        }
 
 
 
