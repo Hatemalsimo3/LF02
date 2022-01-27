@@ -12,5 +12,4 @@ public class Banane extends Obst{
     public void setKrumung(){
        this.kruemmung = kruemmung;
     }
-
 }
