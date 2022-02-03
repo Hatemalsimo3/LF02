@@ -26,7 +26,7 @@ public class Spiel {
             return gast;
 
         }
-        private Ergebnis getErgebnis(){
+        Ergebnis getErgebnis(){
             return ergebnis;
 
         }

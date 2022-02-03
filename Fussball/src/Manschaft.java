@@ -18,6 +18,7 @@ public class Manschaft   {
 
 
 
+
         }
 
 
@@ -89,6 +90,7 @@ public class Manschaft   {
 
             return text;
         }
+
 
 }
 

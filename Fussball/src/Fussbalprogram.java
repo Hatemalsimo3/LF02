@@ -30,7 +30,9 @@ public class Fussbalprogram {
         System.out.println(manschaft);
 
 
-        Gameplay gamplay=new Gameplay();
+        Gameplay gameplay=new Gameplay();
+
+
 
 
 
