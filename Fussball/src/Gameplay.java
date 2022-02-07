@@ -6,6 +6,9 @@ public class Gameplay  {
     private static final int maxnachspielzeit=5;
     private static int maxdauerbisaktion=10;
 
+
+
+
     // schritt 1
   private static int ermittelManschaftswert(Manschaft manschaft){
       int manschaftswert=Math.max(1,manschaft.getMotivation()*manschaft.getMotivation()*manschaft.getGesamtstearke()* manschaft.getNameTrainer().geterfahrung());
@@ -34,11 +37,39 @@ public class Gameplay  {
   }
 
 
-        /**
+
+    private static boolean brecheSpielAb(){
+        Random random=new Random();
+        int SpielAbruch =random.nextInt(1000);
+        if (SpielAbruch== 0){
+          return true;
+
+        }else {
+            return false;
+        }
+    }
+
+       /**
        * Simuliert ein Spiel.
        * @param spiel Das zu spielende Spiel.
        */
-      public static void spielen(Spiel spiel) {
+      public static void spielen(Spiel spiel) throws SpielAbbruchException {
+
+          if (brecheSpielAb()){
+              throw new SpielAbbruchException(65,"Abbruch");
+          }
+
+          try {
+
+
+              Gameplay.spielen(spiel);
+          }catch (SpielAbbruchException e){
+              System.out.println(e.getMassage());
+
+
+          }
+
+
           Random random = new Random();
           Manschaft offensiv;
           Manschaft defensiv;
@@ -96,6 +127,12 @@ public class Gameplay  {
           wert = Math.max(1, wert);
           return wert;
       }
+
+
+
+
+
+
 
       /**
        * Ermittelt, ob ein Torschuss erfolgreich ist oder nicht.

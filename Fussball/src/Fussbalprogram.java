@@ -30,7 +30,46 @@ public class Fussbalprogram {
         System.out.println(manschaft);
 
 
-        Gameplay gameplay=new Gameplay();
+        /**////////////////////////////////////////////////////////////////////////////////////////////
+
+      Trainer trainergast=new Trainer("aumar",12,12);
+        System.out.println(trainergast);  System.out.println("Trainer Name ist = "+ trainergast.getName());
+        System.out.println("Trainer Alter = "+trainergast.getAlter());
+        System.out.println("Trainers Erfahrung ist =" +trainergast.geterfahrung());
+
+        Torwart torwartmo = new Torwart("amed",18,23,3,12);
+        System.out.println("Name des Torwartes ist =" + torwartmo.getName());
+        System.out.println("Torwart Alter = " + torwartmo.getAlter());
+        System.out.println("Torwart stearke ist =" +torwartmo.getStaerke());
+        System.out.println( "Torwart Motivation = "+torwartmo.getMotivation());
+        System.out.println("Torwart Reaktion ist = " +torwartmo.getReaktion());
+
+        Spieler spieler12 =new Spieler("ubaida",23,24,0,10,4);
+
+        Spieler spieler20 = new Spieler("hatem1",33,12,0,22,3);
+
+        ArrayList<Spieler> spielerArrayListe=new ArrayList<>();
+        spielerArrayList.add(spieler12);
+        spielerArrayList.add(spieler20);
+
+        Manschaft manschaftgast=new Manschaft("ferhat",torwartmo,trainergast,spielerArrayListe);
+
+
+        Spiel spiel=new Spiel(manschaft,manschaftgast);
+        System.out.println(spiel);
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
