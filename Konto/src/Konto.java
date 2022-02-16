@@ -5,12 +5,15 @@ public abstract  class Konto {
     private double zinsGuthaben;
 
 
-    public Konto (Kunde inhaber,double kreditLimt,double zinsGuthaben) {
+    public Konto (Kunde inhaber,double kreditLimt,double zinsGuthaben,double kontoStand) {
+        this.kontoStand=kontoStand;
         this.inhaber = inhaber;
         this.kreditLimt = kreditLimt;
         this.zinsGuthaben=zinsGuthaben;
 
     }
+
+
 
 
     public Kunde getInhaber() {
@@ -22,27 +25,35 @@ public abstract  class Konto {
     }
 
     public double getKreditLimt() {
+
         return kreditLimt;
     }
     public void setKreditLimt(double kreditLimt){
+
         this.kreditLimt=kreditLimt;
     }
     public double getZinsGuthaben(){
+
         return zinsGuthaben;
     }
 
-    public void setZinsGuthaben(double zinsGuthaben) {
+    public void setZinsGuthaben(double zinsGuthaben)
+    {
         this.zinsGuthaben = zinsGuthaben;
     }
-    public void einzahlen(double betrag){
-        kontoStand+=betrag;
+    public boolean einzahlen(double betrag) {
+
+        return true;
     }
     public boolean auszahlen(double betrag){
 
-        if(kontoStand-betrag>=0-kreditLimt){   //<-------------- rechnung
+        if(kontoStand + kreditLimt >= betrag){
+            kontoStand-=betrag;
+            return true;
+        }else {
 
+            return false;
         }
-        return true;
 
     }
 

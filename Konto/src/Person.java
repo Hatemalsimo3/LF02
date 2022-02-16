@@ -7,7 +7,6 @@ public abstract class Person {
         this.vorName=vorName;
         this.nachName=nachName;
         this.adresse=adresse;
-
     }
 
     public String getVorName() {

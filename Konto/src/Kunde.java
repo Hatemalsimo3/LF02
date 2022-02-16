@@ -2,8 +2,10 @@ public class Kunde extends Person {
     private Mittarbeiter betreuer;
 
 
-    public Kunde (String vorname,String nachname,Mittarbeiter betreuer){
-        super (vorname,nachname, betreuer.getAdresse());
+    public Kunde (String vorname,String nachname,Adresse Adresse,Mittarbeiter betreuer){
+
+        super (vorname,nachname, Adresse);
+        this.betreuer=betreuer;
 
     }
 
@@ -18,7 +20,7 @@ public class Kunde extends Person {
     public String toString(){
        String text ="\n\t Vorname  = " +getVorName();
        text+="\n\t Nachname = " +getNachName();
-       text +="\n\t Betruer = "+betreuer;
+       text +="\n\t Betruer = "+ betreuer;
        return text;
 
 
