@@ -25,6 +25,14 @@ public class Aktie extends Gegenstand {
     public void setNennwert(double nennwert) {
         this.nennwert = nennwert;
     }
+    @Override
+    public String toString(){
+        String text ="\n\t  ID = " +getId();
+        text+="\n\t Wert = " +getWert();
+        text+="\n\t Unternehmen = " + unternehmen;
+        text+= "\n\t Nennwert =  " +nennwert;
+        return text;
+    }
 }
 
 
