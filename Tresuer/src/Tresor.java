@@ -14,14 +14,14 @@ public class Tresor {
         return gegenstandArrayList.get(id);
     }
 
-    public void addGegenstand(Gegenstand gegenstand){
+    public void addGegenstand(Gegenstand gegenstand){ /// gegenständen werden hinzugefügt mit hilfe von **add**
         this.gegenstandArrayList.add(gegenstand);
     }
 
-    public void removeGegenstand(Gegenstand gegenstand){
+    public void removeGegenstand(Gegenstand gegenstand){ ///gegenständen werden rausgeholt mit hilfe *** remove***
         this.gegenstandArrayList.remove(gegenstand);
     }
-    public double brechneGesammtwert(){
+    public double brechneGesammtwert(){                    // methode die alle werte im tesor  zusammen brechenet.
         double gesammtwert = 0;
         for (Gegenstand v : gegenstandArrayList){
             gesammtwert += v.getWert();
