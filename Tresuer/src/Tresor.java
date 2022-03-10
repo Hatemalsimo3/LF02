@@ -27,6 +27,15 @@ public class Tresor {
             gesammtwert += v.getWert();
         }
         return gesammtwert;
+
     }
+    @Override
+    public String  toString(){
+        String text="\n\t Gegenstände gie im tresor liegen " + gegenstandArrayList;
+        text+="\n\t Gesammwert der in im tresour liegt " + brechneGesammtwert();
+        return text;
+    }
+
+
 
 }

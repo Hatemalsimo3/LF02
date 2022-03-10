@@ -10,8 +10,14 @@ public class Text {
 
          Aktie aktie = new Aktie(123123,100,"HAtem",232);
         System.out.println(aktie);
-        Tresor tresor=new Tresor();
+
+        Tresor tresor = new Tresor() ;
+        tresor.addGegenstand(schmuck);
+        tresor.addGegenstand(aktie);
+        System.out.println(tresor);
         tresor.toString();
+
+
 
     }
 }

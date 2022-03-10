@@ -5,10 +5,7 @@ public class GegenstandNichtGefundenException  {
     public GegenstandNichtGefundenException(int id,String message){
         this.id=id;
         this.message=message;
-
-
     }
-
 
     public int getId() {
         return id;
