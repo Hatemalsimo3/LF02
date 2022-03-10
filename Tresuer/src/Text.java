@@ -19,5 +19,43 @@ public class Text {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+        //adresse adresse =new Adresse(.......................)
+
+        // verkaüfer verkaüfer =new Verkaüfer(........adrese...........)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     }
 }
