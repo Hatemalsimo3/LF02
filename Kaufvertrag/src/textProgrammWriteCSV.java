@@ -16,19 +16,19 @@ public class textProgrammWriteCSV {
 
         String datei = "H:/Dokumente/kaufvertrag.csv";
         PrintWriter printWriter = new PrintWriter(datei);
-        printWriter.println("Vertragpartner;name;Strasse;PLZ;ort");                       // Überschrift
-        printWriter.println("Verkaufer;" +                          // verkaüfer         // Eigenschaften des verkaüfet und werden immer mit
-                verkaeufer.getNachname()+""+                                          // ";" getrenn; +" " + <--- Das sorgt für bisen Abstand zwischen wörter
+        printWriter.println("Vertragpartner;N ame;StrasseHausNr;PLZOrt");                       // Überschrift
+        printWriter.println("Verkaeufer;" +                                   // verkaüfer         // Eigenschaften des verkaüfet und werden immer mit
+                verkaeufer.getNachname()+" "+                                          // ";" getrenn; +" " + <--- Das sorgt für bisen Abstand zwischen wörter
                 verkaeufer.getVorname()+"; "+
-                verkaeufer.adresse().getStrasse()+";"+
-                verkaeufer.adresse().getPlz()+";"+
+                verkaeufer.adresse().getStrasse()+" "+verkaeufer.adresse().getHausNr()+";"+
+                verkaeufer.adresse().getPlz()+" "+
                 verkaeufer.adresse().getOrt() );
 
-        printWriter.println("kaufer;" +                              // kaüfer
-                kaeufer.getNachname()+","+
+        printWriter.println("kaeufer;" +                               // kaüfer
+                kaeufer.getNachname()+" "+
                 kaeufer.getVorname()+";"+
-                kaeufer.adresse().getStrasse()+";"+
-                kaeufer.adresse().getPlz()+";"+
+                kaeufer.adresse().getStrasse()+"  "+kaeufer.adresse().getHausNr()+";"+
+                kaeufer.adresse().getPlz()+"  "+
                 kaeufer.adresse().getOrt());
         printWriter.close();
 
